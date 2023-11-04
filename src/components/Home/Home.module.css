@@ -1,0 +1,47 @@
+.HomeContainer {
+    background-color: #20293A;
+    width: 100%;
+}
+
+.TopBar {
+    margin: 72px;
+    margin-bottom: 32px;
+}
+
+.ImageStats {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.TopBar img {
+    max-height: 100px;
+    border-radius: 10px;
+}
+
+.userName {
+    font-size: 2rem;
+    margin-bottom: 0px;
+    color: #CDD5E0;
+    font-weight: 600;
+}
+
+.userBio {
+    font-size: 1.25rem;
+    color: #CDD5E0;
+}
+
+
+.CardsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1200px;
+    gap: 32px;
+    margin: 72px;
+    margin-top: 0px;
+}
+
+.CardsContainer a {
+    display: inline-block;
+    gap: 32px;
+
+}

@@ -1,0 +1,40 @@
+.searchBarContainer {
+    background-image: url('../../assets/hero-image-github-profile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.SearchBar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.SearchBar input {
+    height: 50px;
+    width: 20rem;
+    margin-top: 30px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    background: #20293A;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    margin-left: -10px;
+    color: #CDD5E0;
+}
+
+
+.SearchBar button {
+    background-image: url('../../assets/Search.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    width: 3.5rem;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    background-color: #20293A;
+    cursor: pointer;
+}

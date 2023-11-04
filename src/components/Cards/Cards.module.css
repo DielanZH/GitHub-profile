@@ -1,0 +1,17 @@
+.cardsContainer {
+    background: linear-gradient(to right, #111729, #1D1B48);
+    height: 150px;
+    width: 500px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.name {
+    font-size: 1.25rem;
+    color: #CDD5E0;
+}
+
+.description {
+    font-size: 1rem;
+    color: #4A5567;
+}

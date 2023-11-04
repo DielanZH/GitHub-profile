@@ -1,0 +1,36 @@
+.statsContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 4fr;
+    height: 40px;
+    width: 850px;
+    gap: 32px;
+    margin-left: -78px;
+    margin-top: 40px;
+}
+
+.statsFraction {
+    display: grid;
+    grid-template-columns: 5fr 1fr 4fr;
+    border-radius: 10px;
+    background-color: #111729;
+    max-height: 70px;
+    width: 200px;
+    color: #4A5567;
+    font-weight: 600;
+    text-align: center;
+}
+
+.statsFraction hr {
+    background-color: #364153;
+}
+
+.statsFraction:nth-child(3) {
+    display: grid;
+    grid-template-columns: 3fr 1fr 6fr;
+    width: 300px;
+}
+
+.statsResults {
+    color: #CDD5E0;
+    font-weight: 600;
+}
