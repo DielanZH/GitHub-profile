@@ -1,6 +1,7 @@
 .HomeContainer {
     background-color: #20293A;
     width: 100%;
+    padding-bottom: 7rem;
 }
 
 .TopBar {
@@ -37,6 +38,7 @@
     width: 1200px;
     gap: 32px;
     margin: 72px;
+    margin-bottom: 0px;
     margin-top: 0px;
 }
 
@@ -44,4 +46,22 @@
     display: inline-block;
     gap: 32px;
 
+}
+
+.repositoriesBtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.repositoriesBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    color: #CDD5E0;
+    font-size: 1rem;
+    font-family: 'Be Vietnam Pro';
+    font-style: bold;
 }
