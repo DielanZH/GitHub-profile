@@ -11,6 +11,8 @@
     border-radius: 10px;
     z-index: 1;
     text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
 
 .searchResults img {

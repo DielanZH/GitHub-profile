@@ -63,8 +63,6 @@ function Home() {
                 />
                 <SearchBarResults
                     results={results}
-                    setResults={setResults}
-                    setInput={setInput}
                     input={input}
                     setProfile={setProfile}
                 />

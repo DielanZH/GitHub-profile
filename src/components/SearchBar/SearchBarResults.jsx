@@ -1,12 +1,12 @@
 import styles from './SearchBarResults.module.css'
 import PropTypes from 'prop-types';
 
-export default function SearchBarResults({ input, setInput, results, setResults, setProfile }) {
+export default function SearchBarResults({ input, results, setProfile }) {
 
     if (input)
 
         return (
-            <div className={styles.searchResults} >
+            <button className={styles.searchResults} onClick={() => setProfile(results)} >
 
                 <img src={results.avatar_url} alt="Not found" />
 
@@ -21,10 +21,7 @@ export default function SearchBarResults({ input, setInput, results, setResults,
                     </p>
 
                 </div>
-
-                <button onClick={() => setProfile(results)}> X </button>
-
-            </div>
+            </button>
 
         )
     return ("")
@@ -33,6 +30,7 @@ export default function SearchBarResults({ input, setInput, results, setResults,
 SearchBarResults.propTypes = {
     results: PropTypes.object,
     setResults: PropTypes.func,
+    setProfile: PropTypes.func,
     setInput: PropTypes.func,
     input: PropTypes.string,
 };
