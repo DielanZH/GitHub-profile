@@ -81,7 +81,7 @@ function Home() {
                     />
                 </div>
 
-                <div>
+                <div className={styles.userNameContainer}>
                     <p className={styles.userName}>
                         {profile.name}
                     </p>
@@ -97,7 +97,7 @@ function Home() {
                 {cards && cards?.slice(0, showAllCards ? cards.length : 4).map(el => {
 
                     return (
-                        <div key={el.id}>
+                        <div className={styles.cardsMap} key={el.id}>
                             <Link to={el.html_url} target="_blank" style={{ textDecoration: 'none' }}>
                                 <Cards
                                     key={el.id}

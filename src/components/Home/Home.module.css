@@ -5,28 +5,38 @@
 }
 
 .TopBar {
-    margin: 72px;
+    margin: 150px;
+    margin-top: 0px;
     margin-bottom: 32px;
 }
 
 .ImageStats {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    position: absolute;
+    margin-top: -8.3rem;
 }
 
 .TopBar img {
-    max-height: 100px;
-    border-radius: 10px;
+    position: absolute;
+    max-height: 120px;
+    border-radius: 20px;
+    border: 8px solid #20293A;
+    margin-top: -1.5rem;
 }
 
-.userName {
+.userNameContainer {
+    margin-top: 6rem;
+}
+
+.userNameContainer .userName {
     font-size: 2rem;
     margin-bottom: 0px;
+    margin-top: 0px;
     color: #CDD5E0;
     font-weight: 600;
 }
 
-.userBio {
+.userNameContainer .userBio {
     font-size: 1.25rem;
     color: #CDD5E0;
 }
@@ -35,11 +45,19 @@
 .CardsContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 1200px;
+    width: fit-content;
     gap: 32px;
-    margin: 72px;
+    margin: 150px;
     margin-bottom: 0px;
     margin-top: 0px;
+}
+
+.cardsMap {
+    height: 150px;
+    width: fit-content;
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .CardsContainer a {
