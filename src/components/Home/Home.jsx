@@ -104,6 +104,10 @@ function Home() {
                                     id={el.id}
                                     name={el.name}
                                     description={el.description}
+                                    stars={el.stargazers_count}
+                                    forks={el.forks_count}
+                                    license={el.license?.spdx_id}
+                                    updateDate={el.updated_at}
                                 />
                             </Link>
                         </div>

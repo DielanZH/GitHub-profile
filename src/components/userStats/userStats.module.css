@@ -13,21 +13,29 @@
     grid-template-columns: 5fr 1fr 4fr;
     border-radius: 10px;
     background-color: #111729;
-    max-height: 70px;
+    max-height: 50px;
     width: 200px;
     color: #4A5567;
-    font-weight: 600;
     text-align: center;
 }
 
 .statsFraction hr {
-    background-color: #364153;
+    border: 1px solid #4A5567;
+}
+
+
+.statsFraction:nth-child(2) {
+    display: grid;
+    grid-template-columns: 5fr 1fr 3fr;
+    width: 170px;
 }
 
 .statsFraction:nth-child(3) {
     display: grid;
     grid-template-columns: 3fr 1fr 6fr;
     width: 300px;
+    max-width: 400px;
+    max-height: 80px;
 }
 
 .statsResults {
