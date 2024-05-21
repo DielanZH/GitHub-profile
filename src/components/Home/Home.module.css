@@ -53,7 +53,7 @@
 }
 
 .cardsMap {
-    height: 150px;
+    height: fit-content;
     width: fit-content;
     margin: 10px;
     margin-left: 0;

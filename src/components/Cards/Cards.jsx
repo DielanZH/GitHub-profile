@@ -1,5 +1,8 @@
 import styles from './Cards.module.css'
 import propTypes from 'prop-types'
+import licenseShield from '../../assets/Chield_alt.svg'
+import forkSVG from '../../assets/Nesting.svg'
+import starSVG from '../../assets/Star.svg'
 
 
 function Cards({ name, description, stars, forks, license, updateDate }) {
@@ -16,12 +19,12 @@ function Cards({ name, description, stars, forks, license, updateDate }) {
             <div className={styles.cardInfo}>
                 {license && license ?
 
-                    <p>{license}</p>
+                    <p><img src={licenseShield} className={styles.svgImage}></img>{license}</p>
 
                     : ''}
 
-                <p>{forks}</p>
-                <p>{stars}</p>
+                <p><img src={forkSVG} className={styles.svgImage}></img>{forks}</p>
+                <p><img src={starSVG} className={styles.svgImage}></img>{stars}</p>
 
                 <div>
                     {console.log(dateResult)}
