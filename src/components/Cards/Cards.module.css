@@ -20,12 +20,12 @@
 
 .cardsContainer .cardInfo{
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
     margin: 0;
     margin-top: 1rem;
     margin-bottom: 1rem;
     max-width: fit-content;
-    color: #4A5567;
+    color: #88898b;
     font-weight: 650;
 }
 
@@ -42,4 +42,10 @@
     vertical-align: middle;
     margin-right: 5px;
     font-size: 1rem;
+}
+
+.updatedMessage {
+    font-size: 12px;
+    font-weight: 100;
+    color: #81858d;
 }

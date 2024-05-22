@@ -7,9 +7,16 @@ import starSVG from '../../assets/Star.svg'
 
 function Cards({ name, description, stars, forks, license, updateDate }) {
 
-    const fecha = new Date;
+    const fechaActual = new Date();
 
-    const dateResult = updateDate - fecha.toISOString();
+    const fechaUpdate = new Date(updateDate);
+
+    const diferenciaMilisegundos = fechaActual - fechaUpdate;
+
+    const diferenciaSegundos = Math.floor(diferenciaMilisegundos / 1000);
+    const diferenciaMinutos = Math.floor(diferenciaSegundos / 60);
+    const diferenciaHoras = Math.floor(diferenciaMinutos / 60);
+    const diferenciaDias = Math.floor(diferenciaHoras / 24);
 
     return (
         <div className={styles.cardsContainer}>
@@ -26,9 +33,8 @@ function Cards({ name, description, stars, forks, license, updateDate }) {
                 <p><img src={forkSVG} className={styles.svgImage}></img>{forks}</p>
                 <p><img src={starSVG} className={styles.svgImage}></img>{stars}</p>
 
-                <div>
-                    {console.log(dateResult)}
-                </div>
+                <p className={styles.updatedMessage}>updated at {diferenciaDias} days ago</p>
+
             </div>
         </div>
     )
