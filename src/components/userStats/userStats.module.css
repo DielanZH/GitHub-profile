@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: 2fr 1fr 4fr;
     height: 40px;
-    width: 850px;
+    width: auto;
+    max-width: max-content;
     gap: 32px;
     margin-left: 10rem;
     margin-top: 40px;
@@ -13,10 +14,18 @@
     grid-template-columns: 5fr 1fr 4fr;
     border-radius: 10px;
     background-color: #111729;
-    max-height: 50px;
-    width: 200px;
+    height: auto;
+    width: auto;
     color: #4A5567;
     text-align: center;
+}
+
+.statsFraction p {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 .statsFraction hr {
@@ -27,18 +36,21 @@
 .statsFraction:nth-child(2) {
     display: grid;
     grid-template-columns: 5fr 1fr 3fr;
-    width: 170px;
+    width: auto;
 }
 
 .statsFraction:nth-child(3) {
     display: grid;
-    grid-template-columns: 3fr 1fr 6fr;
-    width: 300px;
-    max-width: 400px;
-    max-height: 80px;
+    grid-template-columns: auto auto auto;
+    width: auto;
+    max-width: max-content;
 }
 
 .statsResults {
+    display: flex;
     color: #CDD5E0;
     font-weight: 600;
+    margin-left: 1rem;
+    margin: 0;
+    width: auto;
 }

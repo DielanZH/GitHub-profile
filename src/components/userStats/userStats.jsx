@@ -1,4 +1,5 @@
 import styles from './userStats.module.css'
+import propTypes from 'prop-types'
 
 function UserStats({ followers, following, location }) {
     return (
@@ -15,11 +16,16 @@ function UserStats({ followers, following, location }) {
 
             <div className={styles.statsFraction}>
                 <p>Location</p><hr /><p className={styles.statsResults}>{location}</p>
-
             </div>
 
         </div>
     )
 }
+
+UserStats.propTypes = {
+    followers: propTypes.number,
+    following: propTypes.number,
+    location: propTypes.string
+};
 
 export default UserStats
