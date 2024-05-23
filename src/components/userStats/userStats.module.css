@@ -41,7 +41,7 @@
 
 .statsFraction:nth-child(3) {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, auto);
     width: auto;
     max-width: max-content;
 }
@@ -53,4 +53,69 @@
     margin-left: 1rem;
     margin: 0;
     width: auto;
+}
+
+@media (max-width: 640px) {
+
+    .statsContainer {
+        display: block;
+        height: 13rem;
+        width: auto;
+        max-width: max-content;
+        margin-left: 10rem;
+        margin-top: 40px;
+    }
+
+    .statsFraction {
+        display: grid;
+        grid-template-columns:repeat(3, auto);
+        border-radius: 10px;
+        background-color: #111729;
+        height: auto;
+        width: max-content;
+        color: #4A5567;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .statsFraction p {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .statsFraction hr {
+        border: 1px solid #4A5567;
+    }
+
+    .statsFraction:nth-child(1) {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        width: max-content;
+    }
+
+    .statsFraction:nth-child(2) {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        width: max-content;
+    }
+
+    .statsFraction:nth-child(3) {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: max-content;
+    }
+
+    .statsResults {
+        display: flex;
+        color: #CDD5E0;
+        font-weight: 600;
+        margin-left: 1rem;
+        margin: 0;
+        width: auto;
+    }
+
+
 }

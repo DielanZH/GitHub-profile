@@ -11,7 +11,6 @@
 }
 
 .ImageStats {
-    display: grid;
     position: absolute;
     margin-top: -8.3rem;
 }
@@ -82,4 +81,46 @@
     font-size: 1rem;
     font-family: 'Be Vietnam Pro';
     font-style: bold;
+}
+
+@media (max-width: 640px) {
+    .HomeContainer {
+        width: 640px;
+    }
+
+    .TopBar {
+        height: 20rem;
+        margin-left: 4rem;
+    }
+
+    .userNameContainer {
+        position: absolute;
+        margin-top: 14rem;
+    }
+
+    .ImageStats {
+        height: auto;
+        margin-top: -1rem;
+    }
+
+    .ImageStats img {
+        position: absolute;
+        max-height: 100px;
+        border-radius: 20px;
+        border: 8px solid #20293A;
+        margin-top: -1.5rem;
+    }
+
+    .CardsContainer {
+        display: block;
+        margin: 0;
+        margin-left: 3.5rem;
+        gap: 32px;
+    }
+
+    .cardsMap {
+        display: block;
+        width: 640px;
+    }
+
 }

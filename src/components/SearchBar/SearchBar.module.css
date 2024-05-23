@@ -26,6 +26,11 @@
     color: #CDD5E0;
 }
 
+.SearchBar input:active {
+    border: #3662E3;
+    outline-color: #3662E3;
+}
+
 
 .SearchBar button {
     background-image: url('../../assets/Search.svg');
@@ -37,4 +42,25 @@
     border: none;
     background-color: #20293A;
     cursor: pointer;
+}
+
+
+@media (max-width: 640px) {
+
+    .searchBarContainer {
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        height: 12rem;
+    }
+
+    .SearchBar input {
+        width: 15rem;
+    }
+
+    .SearchBar button {
+        width: 3rem;
+    }
+
+
 }

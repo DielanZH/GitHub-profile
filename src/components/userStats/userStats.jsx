@@ -11,7 +11,6 @@ function UserStats({ followers, following, location }) {
 
             <div className={styles.statsFraction}>
                 <p>Following</p><hr /><p className={styles.statsResults}>{following}</p>
-
             </div>
 
             <div className={styles.statsFraction}>

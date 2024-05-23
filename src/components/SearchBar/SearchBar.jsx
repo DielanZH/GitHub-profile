@@ -1,8 +1,7 @@
-import { useState } from 'react'
 import styles from './SearchBar.module.css'
 import PropTypes from 'prop-types'
 
-function SearchBar({ input, setInput, results, setResults }) {
+function SearchBar({ input, setInput, setResults }) {
 
     function handleInputChange(value) {
         setInput(value)
@@ -28,6 +27,7 @@ function SearchBar({ input, setInput, results, setResults }) {
             setResults("");
         }
     };
+
 
     return (
         <div className={styles.searchBarContainer}>
