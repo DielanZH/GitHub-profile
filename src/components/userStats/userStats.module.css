@@ -55,6 +55,33 @@
     width: auto;
 }
 
+@media (max-width:1024px) {
+
+    .statsContainer {
+        display: grid;
+        grid-template-columns: 2fr 1fr 4fr;
+        height: 40px;
+        width: auto;
+        gap: 8px;
+        max-width: max-content;
+        margin-left: 8.5rem;
+        margin-top: -2.5rem;
+    }
+
+
+    .statsFraction {
+        margin: 0.5rem;
+    }
+
+
+    .statsFraction p {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+
+}
+
 @media (max-width: 640px) {
 
     .statsContainer {
@@ -68,7 +95,7 @@
 
     .statsFraction {
         display: grid;
-        grid-template-columns:repeat(3, auto);
+        grid-template-columns: repeat(3, auto);
         border-radius: 10px;
         background-color: #111729;
         height: auto;

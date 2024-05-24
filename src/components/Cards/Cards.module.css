@@ -50,13 +50,22 @@
     color: #81858d;
 }
 
+@media (max-width:1024px) {
+
+    .cardsContainer {
+        height: fit-content;
+        width: 400px;
+        padding: 15px;
+        margin: 0;
+    }
+
+}
+
 @media (max-width: 640px) {
 
     .cardsContainer {
-        background: linear-gradient(to right, #111729, #1D1B48);
         height: fit-content;
         width: 450px;
-        border-radius: 10px;
         padding: 15px;
         margin: 1rem;
     }

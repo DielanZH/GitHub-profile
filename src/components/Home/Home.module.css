@@ -83,6 +83,48 @@
     font-style: bold;
 }
 
+@media (max-width:1024px) {
+
+    .HomeContainer {
+        width: 1024px;
+    }
+
+    .TopBar {
+        height: 8rem;
+        margin-left: 4rem;
+    }
+
+    
+    .userNameContainer {
+        position: absolute;
+        margin-top: 2rem;
+    }
+
+    .ImageStats {
+        height: auto;
+        margin-top: -1rem;
+    }
+
+    .ImageStats img {
+        position: absolute;
+        max-height: 100px;
+        border-radius: 20px;
+        border: 8px solid #20293A;
+        margin-top: -5.5rem;
+    }
+
+    .CardsContainer {
+        margin-left: 3.5rem;
+    }
+
+    .cardsMap {
+        width: fit-content;
+    }
+
+
+
+}
+
 @media (max-width: 640px) {
     .HomeContainer {
         width: 640px;
