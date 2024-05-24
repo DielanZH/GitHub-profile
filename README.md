@@ -1,8 +1,6 @@
-# React + Vite
+# GitHub Profile
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I took on a challenge from devChallenges to create a SPA that utilizes the GitHub API to fetch and display information about repositories and users.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was developed using JavaScript and React, ensuring a dynamic and interactive user experience.
+Additionally, I implemented responsive design to make the app accessible and functional across various devices and screen sizes.
