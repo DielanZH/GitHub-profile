@@ -40,6 +40,7 @@ function Home() {
                 .then(data => setCards(data))
                 .catch(error => console.error('Error fetching data: ', error));
         }
+            //eslint-disable-next-line
     }, []);
 
     useEffect(() => {
